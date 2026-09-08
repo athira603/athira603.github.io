@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Inorwa</title>
+    <meta name="description" content="Inorwa Privacy Policy: how the Inorwa Android app (com.vandrova.inorwa) collects, uses, and protects your personal information.">
+    <meta name="robots" content="index, follow">
+    <style>
+        /* Privacy Policy Styles */
+
+        * { box-sizing: border-box; }
+
+        body {
+          margin: 0;
+          background: #f4f5f7;
+        }
+
+        .privacy-container {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 2rem;
+          font-family: 'Roboto', Arial, Helvetica, sans-serif;
+          line-height: 1.6;
+          color: #333;
+          background: #fff;
+          min-height: 100vh;
+        }
+
+        .privacy-header {
+          text-align: center;
+          margin-bottom: 3rem;
+          padding-bottom: 2rem;
+          border-bottom: 3px solid #FEA41D;
+        }
+
+        .privacy-header h1 {
+          color: #FEA41D;
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-shadow: 0 2px 4px rgba(254, 164, 29, 0.1);
+        }
+
+        .last-updated {
+          color: #666;
+          font-size: 1rem;
+          font-style: italic;
+          margin: 0;
+        }
+
+        .privacy-content {
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+
+        .privacy-section {
+          padding: 2rem;
+          border-bottom: 1px solid #f0f0f0;
+        }
+
+        .privacy-section:last-of-type {
+          border-bottom: none;
+        }
+
+        .privacy-section h2 {
+          color: #FEA41D;
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+          border-bottom: 2px solid #FEA41D;
+          display: inline-block;
+        }
+
+        .privacy-section h3 {
+          color: #333;
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-top: 1.5rem;
+          margin-bottom: 0.8rem;
+        }
+
+        .privacy-section p {
+          margin-bottom: 1rem;
+          color: #555;
+          font-size: 1rem;
+        }
+
+        .privacy-section ul {
+          margin-bottom: 1rem;
+          padding-left: 1.5rem;
+        }
+
+        .privacy-section li {
+          margin-bottom: 0.5rem;
+          color: #555;
+          font-size: 1rem;
+        }
+
+        .privacy-section strong {
+          color: #333;
+          font-weight: 600;
+        }
+
+        .privacy-footer {
+          background: linear-gradient(135deg, #FEA41D 0%, #e07c00 100%);
+          color: white;
+          padding: 2rem;
+          text-align: center;
+          margin-top: 2rem;
+          border-radius: 12px;
+        }
+
+        .effective-date {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          font-weight: 500;
+        }
+
+        .copyright {
+          font-size: 0.9rem;
+          opacity: 0.9;
+          margin: 0;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+          .privacy-container {
+            padding: 1rem;
+          }
+
+          .privacy-header h1 {
+            font-size: 2rem;
+          }
+
+          .privacy-section {
+            padding: 1.5rem;
+          }
+
+          .privacy-section h2 {
+            font-size: 1.2rem;
+          }
+
+          .privacy-section h3 {
+            font-size: 1rem;
+          }
+
+          .privacy-section p,
+          .privacy-section li {
+            font-size: 0.95rem;
+          }
+
+          .privacy-footer {
+            padding: 1.5rem;
+          }
+
+          .effective-date {
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .privacy-container {
+            padding: 0.5rem;
+          }
+
+          .privacy-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+          }
+
+          .privacy-header h1 {
+            font-size: 1.8rem;
+          }
+
+          .privacy-section {
+            padding: 1rem;
+          }
+
+          .privacy-section h2 {
+            font-size: 1.1rem;
+          }
+
+          .privacy-section h3 {
+            font-size: 0.95rem;
+          }
+
+          .privacy-section p,
+          .privacy-section li {
+            font-size: 0.9rem;
+          }
+
+          .privacy-footer {
+            padding: 1rem;
+          }
+
+          .effective-date {
+            font-size: 0.95rem;
+          }
+
+          .copyright {
+            font-size: 0.85rem;
+          }
+        }
+
+        /* Data Map Table Styles */
+        .data-map-table {
+          overflow-x: auto;
+          margin: 1rem 0;
+        }
+
+        .data-map-table table {
+          width: 100%;
+          border-collapse: collapse;
+          background: #fff;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-map-table th {
+          background: linear-gradient(135deg, #FEA41D 0%, #e07c00 100%);
+          color: white;
+          padding: 1rem 0.8rem;
+          text-align: left;
+          font-weight: 600;
+          font-size: 0.9rem;
+          border: none;
+        }
+
+        .data-map-table td {
+          padding: 0.8rem;
+          border-bottom: 1px solid #f0f0f0;
+          font-size: 0.9rem;
+          color: #555;
+          vertical-align: top;
+        }
+
+        .data-map-table tr:hover {
+          background-color: #f8f9fa;
+        }
+
+        .data-map-table tr:last-child td {
+          border-bottom: none;
+        }
+
+        /* Mobile Table Styles */
+        @media (max-width: 768px) {
+          .data-map-table {
+            font-size: 0.8rem;
+          }
+
+          .data-map-table th,
+          .data-map-table td {
+            padding: 0.6rem 0.4rem;
+          }
+
+          .data-map-table th {
+            font-size: 0.8rem;
+          }
+
+          .data-map-table td {
+            font-size: 0.8rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .data-map-table th,
+          .data-map-table td {
+            padding: 0.5rem 0.3rem;
+          }
+
+          .data-map-table th {
+            font-size: 0.75rem;
+          }
+
+          .data-map-table td {
+            font-size: 0.75rem;
+          }
+        }
+
+        /* Print Styles */
+        @media print {
+          body { background: #fff; }
+
+          .privacy-container {
+            max-width: none;
+            padding: 0;
+            box-shadow: none;
+          }
+
+          .privacy-content {
+            box-shadow: none;
+          }
+
+          .privacy-section {
+            break-inside: avoid;
+            border-bottom: 1px solid #ccc;
+          }
+
+          .privacy-footer {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #ccc;
+          }
+
+          .data-map-table table {
+            box-shadow: none;
+            border: 1px solid #ccc;
+          }
+
+          .data-map-table th {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #ccc;
+          }
+
+          .data-map-table td {
+            border: 1px solid #ccc;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-container">
+      <div class="privacy-header">
+        <h1>INORWA PRIVACY POLICY</h1>
+        <p class="last-updated">Last Updated: January 2025</p>
+      </div>
+
+      <div class="privacy-content">
+        <section class="privacy-section">
+          <h2>1. Introduction &amp; Scope</h2>
+          <p>
+            This Privacy Policy describes how Inorwa ("we," "our," or "us") collects, uses, and protects your personal information when you use our Android mobile application ("App"). This policy applies to all users worldwide and complies with applicable privacy laws including GDPR, CCPA/CPRA, COPPA, and LGPD.
+          </p>
+          <ul>
+            <li><strong>Data Controller:</strong> Inorwa Development Team</li>
+            <li><strong>Contact:</strong> connect@vandrova.com</li>
+            <li><strong>App Package:</strong> com.vandrova.inorwa</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>2. What Personal Data We Collect</h2>
+
+          <h3>2.1 Account &amp; Authentication Data</h3>
+          <ul>
+            <li>Phone Number (primary identifier)</li>
+            <li>Email Address (optional)</li>
+            <li>Full Name, First Name, Last Name</li>
+            <li>Date of Birth</li>
+            <li>Gender</li>
+            <li>Address (optional)</li>
+            <li>Profile Pictures (stored in Firebase Storage)</li>
+            <li>Authentication Tokens (Firebase Auth)</li>
+          </ul>
+
+          <h3>2.2 User-Generated Content</h3>
+          <ul>
+            <li>Task Data: Task titles, descriptions, dates, times, completion status</li>
+            <li>Subtask Data: Subtask details and assignments</li>
+            <li>Collaboration Data: Shared tasks and collaborator information</li>
+            <li>User Reports: Content reports and feedback</li>
+            <li>Voice Input: Speech-to-text for task creation (processed locally)</li>
+          </ul>
+
+          <h3>2.3 Device &amp; Technical Information</h3>
+          <ul>
+            <li>Device Information: Android version, app version, device model</li>
+            <li>App Usage Data: Task completion statistics, streaks, achievements</li>
+            <li>Network Information: Internet connectivity status</li>
+            <li>App Preferences: Settings, themes, notification preferences</li>
+            <li>Installation Data: App install referrer information</li>
+          </ul>
+
+          <h3>2.4 Contact Information</h3>
+          <ul>
+            <li>Device Contacts: Read for collaborator suggestions (with permission)</li>
+            <li>Contact Names &amp; Phone Numbers (for task collaboration features)</li>
+          </ul>
+
+          <h3>2.5 Financial &amp; Transaction Data</h3>
+          <ul>
+            <li>Payment Information: UPI transaction references, amounts, payment status</li>
+            <li>Subscription Data: Membership levels, payment history</li>
+            <li>Referral Codes: User referral codes and commission tracking</li>
+          </ul>
+
+          <h3>2.6 Analytics &amp; Performance Data</h3>
+          <ul>
+            <li>App Performance: Crash logs, error reports</li>
+            <li>Usage Analytics: Feature usage, task completion patterns</li>
+            <li>Device Performance: App responsiveness, battery usage</li>
+          </ul>
+
+          <h3>2.7 Android Permissions</h3>
+          <p>Our app requests the following Android permissions to provide full functionality:</p>
+          <ul>
+            <li><strong>RECORD_AUDIO</strong>: Enables voice input and speech-to-text features for task creation</li>
+            <li><strong>READ_CONTACTS</strong>: Allows contact suggestions for task collaboration and sharing</li>
+            <li><strong>WRITE_EXTERNAL_STORAGE</strong>: Enables local data backup and file storage functionality</li>
+            <li><strong>READ_EXTERNAL_STORAGE</strong>: Allows importing and exporting of task data and files</li>
+            <li><strong>INTERNET</strong>: Required for data synchronization, cloud backup, and online features</li>
+            <li><strong>ACCESS_NETWORK_STATE</strong>: Monitors network connectivity status for optimal app performance</li>
+            <li><strong>VIBRATE</strong>: Provides haptic feedback for notifications and task reminders</li>
+            <li><strong>WAKE_LOCK</strong>: Enables background processing for task synchronization and notifications</li>
+            <li><strong>CAMERA</strong>: Allows users to capture and set profile pictures</li>
+            <li><strong>ACCESS_FINE_LOCATION</strong>: Enables location-based features and contextual task management</li>
+          </ul>
+          <p><strong>Permission Control:</strong> You can manage these permissions through your device's Settings &gt; Apps &gt; Inorwa &gt; Permissions. Disabling certain permissions may limit app functionality.</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>3. How We Collect Data</h2>
+
+          <h3>3.1 Direct Collection</h3>
+          <ul>
+            <li>User Registration: Phone number, name, email during signup</li>
+            <li>Profile Creation: Personal details, profile pictures</li>
+            <li>Task Management: User-created tasks and content</li>
+            <li>Payment Processing: UPI payment details</li>
+          </ul>
+
+          <h3>3.2 Automatic Collection</h3>
+          <ul>
+            <li>Firebase Services: Authentication, database, storage, analytics</li>
+            <li>Device Permissions: Contacts, notifications, storage access</li>
+            <li>App Usage: Task statistics, achievement tracking</li>
+            <li>System Information: Device specs, app version, network status</li>
+          </ul>
+
+          <h3>3.3 Third-Party Collection</h3>
+          <ul>
+            <li>Google Services: Firebase, Google Sign-In, Play Services</li>
+            <li>UPI Payment Providers: Google Pay, other UPI apps</li>
+            <li>Analytics Services: Firebase Analytics (if enabled)</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>4. Why We Collect Data (Purposes)</h2>
+
+          <h3>4.1 Essential App Functionality</h3>
+          <ul>
+            <li>Account Management: User authentication and profile management</li>
+            <li>Task Management: Creating, organizing, and tracking tasks</li>
+            <li>Collaboration: Sharing tasks with other users</li>
+            <li>Notifications: Task reminders and app notifications</li>
+          </ul>
+
+          <h3>4.2 Service Improvement</h3>
+          <ul>
+            <li>Performance Optimization: App stability and responsiveness</li>
+            <li>Feature Development: Understanding user needs and preferences</li>
+            <li>Bug Fixes: Identifying and resolving technical issues</li>
+          </ul>
+
+          <h3>4.3 Business Operations</h3>
+          <ul>
+            <li>Payment Processing: Subscription management and billing</li>
+            <li>Referral System: Tracking referrals and commissions</li>
+            <li>Customer Support: Responding to user inquiries and reports</li>
+          </ul>
+
+          <h3>4.4 Legal Compliance</h3>
+          <ul>
+            <li>Content Moderation: Reviewing reported content</li>
+            <li>Security: Preventing fraud and abuse</li>
+            <li>Legal Requirements: Compliance with applicable laws</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>5. Legal Bases for Processing (GDPR/EEA)</h2>
+          <ul>
+            <li><strong>Consent:</strong> Profile pictures, contact access, analytics</li>
+            <li><strong>Contract Performance:</strong> Essential app functionality, payment processing</li>
+            <li><strong>Legitimate Interest:</strong> App improvement, security, fraud prevention</li>
+            <li><strong>Legal Obligation:</strong> Content moderation, compliance requirements</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>6. Data Sharing &amp; Subprocessors</h2>
+
+          <h3>6.1 Third-Party Services</h3>
+          <ul>
+            <li>Firebase (Google): Authentication, database, storage, analytics</li>
+            <li>Google Pay: UPI payment processing</li>
+            <li>Android System: Device permissions, notifications</li>
+          </ul>
+
+          <h3>6.2 Data Sharing Policies</h3>
+          <ul>
+            <li>No Sale: We do not sell personal data to third parties</li>
+            <li>Limited Sharing: Only with service providers necessary for app functionality</li>
+            <li>User Control: Users can control data sharing through app settings</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>7. International Data Transfers</h2>
+          <p>Data may be transferred to and processed in countries outside your residence, including:</p>
+          <ul>
+            <li>United States: Firebase/Google services</li>
+            <li>India: UPI payment processing</li>
+            <li>Other Countries: As needed for service provision</li>
+          </ul>
+          <p>We ensure appropriate safeguards are in place for international transfers.</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>8. Data Retention</h2>
+
+          <h3>8.1 Retention Periods</h3>
+          <ul>
+            <li>Account Data: Until account deletion or 3 years of inactivity</li>
+            <li>Task Data: Until user deletion or account closure</li>
+            <li>Payment Data: 7 years (legal requirement)</li>
+            <li>Analytics Data: 2 years maximum</li>
+            <li>Contact Data: Until permission revoked</li>
+          </ul>
+
+          <h3>8.2 Deletion Rights</h3>
+          <p>Users can request data deletion through app settings or by contacting us.</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>9. User Rights</h2>
+
+          <h3>9.1 GDPR Rights (EU/EEA Users)</h3>
+          <ul>
+            <li>Access: Request copies of your data</li>
+            <li>Rectification: Correct inaccurate data</li>
+            <li>Erasure: Request data deletion</li>
+            <li>Portability: Export your data</li>
+            <li>Restriction: Limit data processing</li>
+            <li>Objection: Object to certain processing</li>
+            <li>Withdraw Consent: Revoke consent at any time</li>
+          </ul>
+
+          <h3>9.2 CCPA/CPRA Rights (California Users)</h3>
+          <ul>
+            <li>Know: What personal information is collected</li>
+            <li>Delete: Request deletion of personal information</li>
+            <li>Opt-Out: Opt-out of sale/sharing (we don't sell data)</li>
+            <li>Non-Discrimination: Equal service regardless of privacy choices</li>
+          </ul>
+
+          <h3>9.3 LGPD Rights (Brazilian Users)</h3>
+          <ul>
+            <li>Confirmation: Confirm data processing</li>
+            <li>Access: Access your data</li>
+            <li>Correction: Correct incomplete data</li>
+            <li>Anonymization/Deletion: Request data deletion</li>
+            <li>Portability: Data portability</li>
+            <li>Information: Information about data sharing</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>10. Children's Privacy (COPPA/GDPR-K)</h2>
+          <ul>
+            <li>Age Requirement: Users must be 13+ to create accounts</li>
+            <li>Parental Consent: Required for users under 16 (GDPR) or 13 (COPPA)</li>
+            <li>Limited Collection: Minimal data collection for children</li>
+            <li>Parental Rights: Parents can request data deletion for their children</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>11. Cookies &amp; Tracking</h2>
+          <ul>
+            <li>Local Storage: App preferences and settings</li>
+            <li>Session Data: Temporary app state information</li>
+            <li>No Web Cookies: This is a mobile app, not a website</li>
+            <li>Analytics: Firebase Analytics (if enabled)</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>12. Security Measures</h2>
+
+          <h3>12.1 Technical Safeguards</h3>
+          <ul>
+            <li>Encryption: Data encrypted in transit and at rest</li>
+            <li>Authentication: Secure user authentication via Firebase</li>
+            <li>Access Controls: Limited access to personal data</li>
+            <li>Regular Updates: Security patches and updates</li>
+          </ul>
+
+          <h3>12.2 Organizational Safeguards</h3>
+          <ul>
+            <li>Staff Training: Privacy and security training</li>
+            <li>Data Minimization: Collect only necessary data</li>
+            <li>Incident Response: Procedures for data breaches</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>13. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy periodically. Users will be notified of material changes through:</p>
+          <ul>
+            <li>In-App Notifications</li>
+            <li>Email Notifications (if email provided)</li>
+            <li>Updated Policy Date</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>14. Contact Information</h2>
+          <p>For privacy inquiries, data requests, or complaints:</p>
+          <ul>
+            <li>Email: connect@vandrova.com</li>
+            <li>Address: P.O. Box 57, Charamangalam, Muhamma, Alappuzha – 688525, Kerala, India</li>
+            <li>Phone: +91 96562 34636</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Google Play Data Safety Summary</h2>
+
+          <h3>Data Types Collected:</h3>
+          <ul>
+            <li>Personal Info: Name, email, phone number, address, date of birth, gender</li>
+            <li>Photos &amp; Videos: Profile pictures</li>
+            <li>Audio: Voice input for task creation</li>
+            <li>App Activity: Task data, app interactions, in-app search history</li>
+            <li>Device/Other IDs: Device identifiers, app instance IDs</li>
+            <li>Financial Info: Payment information, purchase history</li>
+          </ul>
+
+          <h3>Data Sharing:</h3>
+          <ul>
+            <li>Shared with third parties: Yes (Firebase, Google Pay)</li>
+            <li>Data encrypted in transit: Yes</li>
+            <li>Data encrypted at rest: Yes</li>
+            <li>Users can request deletion: Yes</li>
+          </ul>
+
+          <h3>Security Practices:</h3>
+          <ul>
+            <li>Data is encrypted: Yes</li>
+            <li>Users can request data deletion: Yes</li>
+            <li>Data is shared with third parties: Yes (service providers only)</li>
+          </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Data Map</h2>
+          <div class="data-map-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data Type</th>
+                  <th>Source/Module</th>
+                  <th>Destination/Vendor</th>
+                  <th>Retention Period</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Phone Number</td>
+                  <td>AuthViewModel, OtpFragment</td>
+                  <td>Firebase Auth</td>
+                  <td>Until account deletion</td>
+                  <td>Authentication</td>
+                </tr>
+                <tr>
+                  <td>Email Address</td>
+                  <td>AuthViewModel, UserProfile</td>
+                  <td>Firebase Database</td>
+                  <td>Until account deletion</td>
+                  <td>Account management</td>
+                </tr>
+                <tr>
+                  <td>Full Name</td>
+                  <td>AuthViewModel, DataStoreManager</td>
+                  <td>Firebase Database, Local Storage</td>
+                  <td>Until account deletion</td>
+                  <td>User identification</td>
+                </tr>
+                <tr>
+                  <td>Profile Pictures</td>
+                  <td>ProfileStorageManager</td>
+                  <td>Firebase Storage</td>
+                  <td>Until account deletion</td>
+                  <td>User profile</td>
+                </tr>
+                <tr>
+                  <td>Task Data</td>
+                  <td>TaskDetailActivity, TaskRepository</td>
+                  <td>Firebase Database, Local SQLite</td>
+                  <td>Until user deletion</td>
+                  <td>Core functionality</td>
+                </tr>
+                <tr>
+                  <td>Contact Information</td>
+                  <td>SubtaskAssignmentBottomSheet</td>
+                  <td>Local processing only</td>
+                  <td>Until permission revoked</td>
+                  <td>Collaboration features</td>
+                </tr>
+                <tr>
+                  <td>Payment Data</td>
+                  <td>UPIPaymentHelper</td>
+                  <td>Firebase Database</td>
+                  <td>7 years</td>
+                  <td>Payment processing</td>
+                </tr>
+                <tr>
+                  <td>Device Information</td>
+                  <td>App.kt, MainActivity</td>
+                  <td>Firebase Analytics</td>
+                  <td>2 years</td>
+                  <td>App improvement</td>
+                </tr>
+                <tr>
+                  <td>Referral Codes</td>
+                  <td>ReferralCodeManager</td>
+                  <td>Firebase Database, Local Storage</td>
+                  <td>Until account deletion</td>
+                  <td>Referral system</td>
+                </tr>
+                <tr>
+                  <td>Voice Input</td>
+                  <td>MainActivity</td>
+                  <td>Local processing only</td>
+                  <td>Not stored</td>
+                  <td>Task creation</td>
+                </tr>
+                <tr>
+                  <td>Notification Data</td>
+                  <td>NotificationHelper</td>
+                  <td>Local storage only</td>
+                  <td>Until app uninstall</td>
+                  <td>App notifications</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Compliance Checklist</h2>
+
+          <h3>✅ GDPR Compliance</h3>
+          <ul>
+            <li>Data Processing Agreement (DPA) with Firebase/Google</li>
+            <li>Privacy Policy published and accessible</li>
+            <li>User consent mechanisms implemented</li>
+            <li>Data subject rights procedures established</li>
+            <li>Data Protection Impact Assessment (if required)</li>
+            <li>Data breach notification procedures</li>
+          </ul>
+
+          <h3>✅ CCPA/CPRA Compliance</h3>
+          <ul>
+            <li>Privacy Policy includes required disclosures</li>
+            <li>"Do Not Sell" mechanism (not applicable - we don't sell data)</li>
+            <li>User rights request procedures</li>
+            <li>Non-discrimination policy</li>
+          </ul>
+
+          <h3>✅ COPPA Compliance</h3>
+          <ul>
+            <li>Age verification mechanisms</li>
+            <li>Parental consent procedures</li>
+            <li>Limited data collection for children</li>
+            <li>Parental rights procedures</li>
+          </ul>
+
+          <h3>✅ Google Play Console</h3>
+          <ul>
+            <li>Data Safety form completed</li>
+            <li>Privacy Policy URL provided</li>
+            <li>Data collection disclosures accurate</li>
+            <li>Security practices documented</li>
+          </ul>
+
+          <h3>✅ Technical Implementation</h3>
+          <ul>
+            <li>Data encryption implemented</li>
+            <li>Access controls in place</li>
+            <li>Data deletion mechanisms</li>
+            <li>User consent tracking</li>
+            <li>Privacy by design principles</li>
+          </ul>
+
+          <h3>✅ Legal Documentation</h3>
+          <ul>
+            <li>Terms of Service updated</li>
+            <li>Privacy Policy legally reviewed</li>
+            <li>Data Processing Agreements signed</li>
+            <li>Incident response plan documented</li>
+          </ul>
+        </section>
+
+        <div class="privacy-footer">
+          <p class="effective-date">
+            <strong>This Privacy Policy is effective as of January 2025 and applies to all users of the Inorwa App.</strong>
+          </p>
+          <p class="copyright">© 2025 Inorwa Development Team. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
