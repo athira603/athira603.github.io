@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Memory Flow</title>
+    <meta name="description" content="Privacy Policy for Memory Flow (com.memoryflow.brain): Learn how we prioritize your privacy with an offline-first architecture, zero personal data collection, and local-only storage.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #0c0f17;
+            --bg-card: #151926;
+            --bg-card-sub: #1b2133;
+            --primary: #00BFFF;
+            --primary-glow: rgba(0, 191, 255, 0.25);
+            --secondary: #00FF7F;
+            --secondary-glow: rgba(0, 255, 127, 0.25);
+            --accent-gold: #FFD700;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(0, 191, 255, 0.3);
+            --text-main: #E2E8F0;
+            --text-muted: #94A3B8;
+            --text-heading: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 3rem 1.5rem 2.5rem;
+            background: linear-gradient(180deg, #181e30 0%, var(--bg-card) 100%);
+            border: 1px solid var(--border-highlight);
+            border-radius: 20px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px var(--primary-glow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 30px;
+            background: rgba(0, 191, 255, 0.12);
+            border: 1px solid rgba(0, 191, 255, 0.3);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+        }
+
+        h1 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--text-heading);
+            letter-spacing: -0.5px;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(135deg, #FFFFFF 0%, #BAE6FD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        /* Fast Summary Banner */
+        .summary-banner {
+            background: rgba(0, 255, 127, 0.08);
+            border: 1px solid rgba(0, 255, 127, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .summary-icon {
+            font-size: 1.75rem;
+            line-height: 1;
+        }
+
+        .summary-content h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 0.35rem;
+            font-weight: 700;
+        }
+
+        .summary-content p {
+            color: #CBD5E1;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Content Sections */
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 2.25rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--text-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.1rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #CBD5E1;
+            font-size: 0.95rem;
+        }
+
+        li strong {
+            color: #FFFFFF;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #7DD3FC;
+            text-decoration: underline;
+        }
+
+        /* Callout Box */
+        .callout {
+            background: var(--bg-card-sub);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.25rem 0;
+        }
+
+        .callout.green {
+            border-left-color: var(--secondary);
+            background: rgba(0, 255, 127, 0.05);
+        }
+
+        .callout.gold {
+            border-left-color: var(--accent-gold);
+            background: rgba(255, 215, 0, 0.05);
+        }
+
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+            background: var(--bg-card-sub);
+        }
+
+        thead {
+            background: #1e263d;
+            border-bottom: 2px solid var(--border-highlight);
+        }
+
+        th {
+            padding: 1rem;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-family: 'Exo 2', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: #CBD5E1;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        /* Checklist */
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .badge-check {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #181e30 0%, #111420 100%);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .footer-logo {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-logo span {
+            color: var(--primary);
+        }
+
+        .footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: inline-block;
+            margin-top: 1.25rem;
+            text-align: left;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .contact-box p {
+            margin-bottom: 0.4rem;
+            color: var(--text-main);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+
+            .meta-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            th, td {
+                padding: 0.75rem 0.6rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="app-badge">Official Policy • 100% Offline &amp; Privacy-First</div>
+            <h1>MEMORY FLOW PRIVACY POLICY</h1>
+            <div class="meta-info">
+                <div class="meta-item"><strong>Application:</strong> Memory Flow: Brain Training</div>
+                <div class="meta-item"><strong>Package:</strong> <code>com.memoryflow.brain</code></div>
+                <div class="meta-item"><strong>Effective Date:</strong> November 2026</div>
+                <div class="meta-item"><strong>Last Updated:</strong> November 23, 2026</div>
+            </div>
+        </header>
+
+        <!-- Executive Summary Banner -->
+        <div class="summary-banner">
+            <div class="summary-icon">🛡️</div>
+            <div class="summary-content">
+                <h3>Privacy In Brief: Zero Tracking, Local Only</h3>
+                <p>
+                    Memory Flow is built from the ground up on strict <strong>Privacy-by-Design</strong> principles. The application operates 100% offline. We do not require account registration, collect zero personally identifiable information (PII), employ no third-party tracking or advertising SDKs, and store all game progress, scores, and preferences strictly on your local device.
+                </p>
+            </div>
+        </div>
+
+        <!-- 1. Introduction & Scope -->
+        <section class="content-card">
+            <h2>1. Introduction &amp; Scope</h2>
+            <p>
+                This Privacy Policy describes how <strong>Memory Flow</strong> ("the App," "we," "our," or "us"), an Android mobile brain-training application developed by <strong>Athira C P</strong>, handles your information.
+            </p>
+            <p>
+                This policy governs your use of Memory Flow (Application ID: <code>com.memoryflow.brain</code>) downloaded via the Google Play Store. It details our architectural commitments, our zero-collection stance, and how your data is handled solely within the secure sandbox of your Android operating system.
+            </p>
+            <p>
+                This Privacy Policy is designed to comply with global data protection frameworks and app distribution standards, including:
+            </p>
+            <ul>
+                <li><strong>General Data Protection Regulation (GDPR)</strong> (EU &amp; UK)</li>
+                <li><strong>California Consumer Privacy Act (CCPA)</strong> &amp; <strong>California Privacy Rights Act (CPRA)</strong></li>
+                <li><strong>Children's Online Privacy Protection Act (COPPA)</strong></li>
+                <li><strong>Lei Geral de Proteção de Dados (LGPD)</strong> (Brazil)</li>
+                <li><strong>Google Play Developer Program Policies &amp; Data Safety Requirements</strong></li>
+            </ul>
+            <div class="callout">
+                <strong>Data Controller Contact:</strong><br>
+                Developer: Athira C P<br>
+                Email: <a href="mailto:athiracp.official@gmail.com">athiracp.official@gmail.com</a><br>
+                Jurisdiction: North Paravoor, Ernakulam, Kerala, India
+            </div>
+        </section>
+
+        <!-- 2. Architectural Philosophy: Offline First -->
+        <section class="content-card">
+            <h2>2. Architectural Philosophy: 100% Offline-First</h2>
+            <p>
+                Unlike modern mobile applications that continuously stream telemetry, analytics, and personal profiles to external cloud infrastructures, Memory Flow operates completely independent of external application servers:
+            </p>
+            <ul>
+                <li><strong>No User Accounts:</strong> You are not required to create an account, log in with an email, sign in via phone number, or authenticate via social logins (such as Google Sign-In, Apple, or Facebook).</li>
+                <li><strong>No Remote Databases:</strong> We do not operate, license, or maintain remote databases, user directories, cloud synchronization services, or external backups.</li>
+                <li><strong>No Tracking or Telemetry:</strong> There are no analytics trackers, crashlytics reporting daemons, session replay SDKs, or background pingers compiled into the production binary.</li>
+                <li><strong>Deterministic Local Processing:</strong> All game mechanics, cognitive puzzles (Path Flow, Pulse Count, Pattern Recall), score calculations, and progression milestones are computed on-device in real-time.</li>
+            </ul>
+        </section>
+
+        <!-- 3. What Information We Do NOT Collect -->
+        <section class="content-card">
+            <h2>3. Information We Do NOT Collect</h2>
+            <p>
+                To provide total transparency under GDPR Article 13 and CCPA § 1798.100, we provide an explicit enumeration of data categories that are <strong>NEVER</strong> collected, stored, transmitted, or accessed by Memory Flow:
+            </p>
+            <ul>
+                <li><strong>Personal Identifiers:</strong> We do not collect names, usernames, physical addresses, postal codes, email addresses, phone numbers, or social media handles.</li>
+                <li><strong>Hardware &amp; Network Identifiers:</strong> We do not collect or log IMEI numbers, MAC addresses, Android Advertising ID (AAID), SIM card serials, or IP addresses.</li>
+                <li><strong>Precise or Coarse Geolocation:</strong> We do not access GPS hardware, cell tower locations, or Wi-Fi triangulation data.</li>
+                <li><strong>Biometric &amp; Health Data:</strong> We do not collect fingerprint data, facial geometry, heartbeat, or biometric cognitive profiling.</li>
+                <li><strong>Contacts &amp; Communication:</strong> We do not access phone contacts, address books, SMS logs, call logs, or messaging records.</li>
+                <li><strong>Camera &amp; Audio:</strong> We do not access device cameras, photo galleries, or microphones. No audio or visual input is ever recorded.</li>
+                <li><strong>Financial &amp; Payment Credentials:</strong> We do not collect credit card numbers, debit cards, bank account details, or payment identifiers. All in-game shop items utilize virtual gameplay points ("Flux") with zero real-currency transactions.</li>
+            </ul>
+        </section>
+
+        <!-- 4. Data Stored Locally On Your Device -->
+        <section class="content-card">
+            <h2>4. Information Processed Locally On Your Device</h2>
+            <p>
+                To deliver a persistent and rewarding brain-training experience, Memory Flow stores limited operational game data exclusively within your device's isolated application sandbox:
+            </p>
+            <h3>4.1 Local Game Progress (Jetpack Room Database)</h3>
+            <p>
+                Using Android's native SQLite Room persistence library, the App writes the following data to your device's private storage:
+            </p>
+            <ul>
+                <li><strong>Level Progression:</strong> Current level reached across game modes (Path Flow, Pulse Count, Pattern Recall).</li>
+                <li><strong>Performance Metrics:</strong> High scores, completion times, accuracy percentages, and consecutive win streaks.</li>
+                <li><strong>Player Progression:</strong> Accumulated in-game virtual "Flux" points, player rank titles, and unlocked achievement badges.</li>
+            </ul>
+
+            <h3>4.2 User Preferences (Jetpack DataStore)</h3>
+            <p>
+                The App stores your configuration preferences locally:
+            </p>
+            <ul>
+                <li><strong>Audio Toggles:</strong> Sound effects enabled/disabled and ambient music enabled/disabled.</li>
+                <li><strong>Haptic Toggle:</strong> Vibration feedback enabled/disabled.</li>
+                <li><strong>Visual Aesthetic:</strong> The currently equipped UI theme identifier (e.g., Cyber Dark, Matrix Glow, Sunset Pulse).</li>
+                <li><strong>Assist Mode:</strong> Toggle state for in-game hint assistance.</li>
+            </ul>
+            <div class="callout green">
+                <strong>Sandboxed Isolation:</strong> Under Android's security architecture (Linux UID isolation &amp; SELinux), this local database is encrypted by your device's file-based encryption (FBE) and cannot be accessed, read, or modified by other applications installed on your device.
+            </div>
+        </section>
+
+        <!-- 5. Android System Permissions -->
+        <section class="content-card">
+            <h2>5. Android System Permissions</h2>
+            <p>
+                In compliance with the Google Play Developer Policy on permissions and data minimization, Memory Flow requests only the absolute minimum OS permissions necessary for functionality:
+            </p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Category</th>
+                            <th>Purpose &amp; Usage</th>
+                            <th>Data Transmitted?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>android.permission.VIBRATE</code></td>
+                            <td>Hardware Control (Normal)</td>
+                            <td>Triggers short haptic tactile feedback when tapping bubbles, completing paths, or hitting error states to enrich user immersion.</td>
+                            <td><strong>NO.</strong> Handled entirely on hardware without data generation.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                Memory Flow does <strong>NOT</strong> request any dangerous or runtime-permission categories, such as:
+            </p>
+            <ul>
+                <li>❌ <code>READ_CONTACTS</code> / <code>WRITE_CONTACTS</code></li>
+                <li>❌ <code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code></li>
+                <li>❌ <code>CAMERA</code> / <code>RECORD_AUDIO</code></li>
+                <li>❌ <code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code></li>
+                <li>❌ <code>READ_PHONE_STATE</code> / <code>READ_PRIVILEGED_PHONE_STATE</code></li>
+            </ul>
+            <p>
+                <em>Note on Internet Connectivity:</em> Memory Flow does not require internet access to execute game algorithms. When you choose to tap the "Privacy Policy" button in the Settings menu, the app simply dispatches a standard Android system intent (<code>ACTION_VIEW</code>) directing your default web browser to display this page.
+            </p>
+        </section>
+
+        <!-- 6. In-Game Economy & Virtual Currency -->
+        <section class="content-card">
+            <h2>6. In-Game Economy &amp; Virtual Currency</h2>
+            <p>
+                Memory Flow contains an internal game feature known as "Shop &amp; Themes."
+            </p>
+            <ul>
+                <li><strong>Zero In-App Purchases (IAP):</strong> The App does not contain Google Play In-App Billing or third-party payment gateways. There is no real-money exchange.</li>
+                <li><strong>"Flux" Currency:</strong> The virtual currency "Flux" displayed in the app is an imaginary scoring asset awarded purely for completing game rounds, achieving high streaks, and leveling up cognitive skills.</li>
+                <li><strong>Virtual Items:</strong> Virtual items (aesthetic UI themes) have no real monetary value, cannot be redeemed for legal tender, cannot be transferred between devices or players, and exist solely as local state flags on your phone.</li>
+            </ul>
+        </section>
+
+        <!-- 7. Third-Party SDKs & Advertising -->
+        <section class="content-card">
+            <h2>7. Third-Party SDKs, Advertising &amp; Tracking</h2>
+            <p>
+                Many mobile applications embed third-party software development kits (SDKs) that silently harvest advertising identifiers and telemetry.
+            </p>
+            <div class="callout green">
+                <strong>Zero Commercial Ad Networks &amp; Zero Tracking SDKs:</strong><br>
+                Memory Flow is <strong>100% ad-free</strong>. We do NOT integrate Google AdMob, Unity Ads, AppLovin, IronSource, Meta Audience Network, Firebase Analytics, Flurry, Adjust, AppsFlyer, or any other commercial tracking library.
+            </div>
+            <p>
+                Because no third-party tracking SDKs exist within Memory Flow:
+            </p>
+            <ul>
+                <li>No cross-app behavioral tracking takes place.</li>
+                <li>No advertising profiling or retargeting is performed.</li>
+                <li>No user identity resolution occurs.</li>
+            </ul>
+        </section>
+
+        <!-- 8. Legal Bases for Processing (GDPR/EEA Users) -->
+        <section class="content-card">
+            <h2>8. Legal Bases for Processing (GDPR / UK Data Protection Act)</h2>
+            <p>
+                Under the European General Data Protection Regulation (Regulation (EU) 2016/679) and the UK Data Protection Act 2018, organizations processing data must establish a lawful basis.
+            </p>
+            <p>
+                Because all data processed by Memory Flow is held exclusively on your own personal device, the legal grounds under Article 6(1) GDPR are:
+            </p>
+            <ul>
+                <li><strong>Performance of a Contract (Article 6(1)(b)):</strong> Processing high scores, game progression, and visual settings is strictly necessary to fulfill your request to play and experience the cognitive exercises provided by the App.</li>
+                <li><strong>Legitimate Interests (Article 6(1)(f)):</strong> Providing smooth gameplay animations, sound preferences, and haptic feedback configured by the user without compromising user privacy.</li>
+            </ul>
+            <p>
+                We do not engage in any processing that requires international data transfer of personal data from the EEA/UK to third countries, as all data remains strictly resident on your personal mobile hardware.
+            </p>
+        </section>
+
+        <!-- 9. Global User Rights -->
+        <section class="content-card">
+            <h2>9. Global User Rights &amp; How to Exercise Them</h2>
+            
+            <h3>9.1 European Economic Area (EEA) &amp; United Kingdom (GDPR)</h3>
+            <p>If you reside in the EEA or UK, you enjoy the following rights under Articles 15-22 of the GDPR:</p>
+            <ul>
+                <li><strong>Right of Access:</strong> You have the right to know what personal data is held. Because Memory Flow operates offline, 100% of your data is visible directly in the app's user interface (high scores, statistics screen, equipped themes).</li>
+                <li><strong>Right to Rectification:</strong> You can update or modify your game settings directly in the Settings screen at any time.</li>
+                <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You have full, autonomous capability to permanently purge all data immediately without our involvement (see Section 11).</li>
+                <li><strong>Right to Data Portability:</strong> Your data is stored in standard on-device SQLite database structures.</li>
+                <li><strong>Right to Lodge a Complaint:</strong> You have the right to lodge a complaint with your local Data Protection Authority (DPA) regarding data processing.</li>
+            </ul>
+
+            <h3>9.2 California Residents (CCPA &amp; CPRA)</h3>
+            <p>Under the California Consumer Privacy Act and the California Privacy Rights Act (Cal. Civ. Code § 1798.100 et seq.):</p>
+            <ul>
+                <li><strong>Notice of Collection:</strong> We do not collect personal information as defined by the CCPA.</li>
+                <li><strong>Sale or Sharing of Personal Information:</strong> We do <strong>NOT</strong> sell, rent, disclose, disseminate, transfer, or make available any personal data to third parties for monetary or other valuable consideration. We have not sold or shared any consumer personal information in the preceding 12 months.</li>
+                <li><strong>Right to Non-Discrimination:</strong> We will never discriminate against you (deny services, charge different prices, or provide a different level of quality) for exercising any privacy rights.</li>
+            </ul>
+
+            <h3>9.3 Brazilian Residents (LGPD)</h3>
+            <p>
+                Under the Brazilian General Personal Data Protection Law (Lei Geral de Proteção de Dados - Law No. 13.709/2018), Brazilian users have rights to confirmation, access, correction, and deletion of personal data. All these rights are immediately satisfiable through the app's local interface and Android storage controls.
+            </p>
+        </section>
+
+        <!-- 10. Children's Privacy (COPPA & Families Policy) -->
+        <section class="content-card">
+            <h2>10. Children's Privacy (COPPA &amp; Google Play Families Policy)</h2>
+            <p>
+                Protecting the privacy of children is of paramount importance to us.
+            </p>
+            <ul>
+                <li><strong>No Collection from Minors:</strong> Memory Flow complies strictly with the Children's Online Privacy Protection Act (COPPA, 15 U.S.C. §§ 6501-6508) and Article 8 of the GDPR. We do not knowingly collect, solicit, or maintain any personal information from children under the age of 13 (or under 16 in the European Union).</li>
+                <li><strong>Safe Environment:</strong> Because Memory Flow is completely offline, contains no external chat functions, features no user-generated profile uploads, and serves no advertisements, it provides an inherently safe, non-invasive digital environment for users of all ages.</li>
+                <li><strong>Parental Inquiries:</strong> If a parent or guardian believes their child has somehow provided personal data through external communications, they may contact us immediately at <a href="mailto:athiracp.official@gmail.com">athiracp.official@gmail.com</a>, and we will take immediate remedial steps.</li>
+            </ul>
+        </section>
+
+        <!-- 11. Data Storage, Security & Self-Service Deletion -->
+        <section class="content-card">
+            <h2>11. Data Storage, Security &amp; Complete Deletion</h2>
+
+            <h3>11.1 Security Architecture</h3>
+            <p>
+                We rely on Google Android's multi-layered security model to protect all data stored on your device:
+            </p>
+            <ul>
+                <li><strong>Kernel-Level Application Sandbox:</strong> Android assigns each installed app a unique Linux User ID (UID). Memory Flow's database, cache, and files are protected so no other application can access them.</li>
+                <li><strong>Full Disk / File-Based Encryption (FBE):</strong> On all supported Android devices, data saved to internal storage is automatically encrypted at rest using hardware-backed cryptographic keys.</li>
+            </ul>
+
+            <h3>11.2 Data Retention Policy</h3>
+            <p>
+                Because all records exist purely on your physical device hardware, data retention is entirely governed by your choices:
+            </p>
+            <ul>
+                <li>Game scores, level milestones, and sound preferences persist on your device for as long as you maintain the application installed.</li>
+                <li>We do not retain backup archives, copies, or shadows on external servers.</li>
+            </ul>
+
+            <h3>11.3 Step-by-Step Self-Service Data Deletion</h3>
+            <p>
+                You possess instantaneous, autonomous control to erase 100% of your game data at any time without submitting a request or waiting for manual intervention. To permanently purge all Memory Flow data:
+            </p>
+            <div class="callout gold">
+                <strong>Method A: Reset All App Data</strong><br>
+                1. Open your Android device <strong>Settings</strong>.<br>
+                2. Navigate to <strong>Apps</strong> &gt; <strong>See all apps</strong> &gt; <strong>Memory Flow</strong>.<br>
+                3. Tap on <strong>Storage &amp; cache</strong>.<br>
+                4. Tap <strong>Clear Storage</strong> (or <strong>Clear Data</strong>) and confirm.<br>
+                <em>All progress, high scores, flux balance, and settings are instantly and permanently erased.</em>
+            </div>
+            <div class="callout gold">
+                <strong>Method B: Complete Uninstall</strong><br>
+                1. Locate the Memory Flow app icon on your home screen or app drawer.<br>
+                2. Long-press the icon and select <strong>Uninstall</strong>.<br>
+                3. Confirm the prompt.<br>
+                <em>Android will purge the application and automatically wipe its private sandbox database and files.</em>
+            </div>
+        </section>
+
+        <!-- 12. Google Play Data Safety Summary -->
+        <section class="content-card">
+            <h2>12. Google Play Data Safety Summary</h2>
+            <p>
+                For complete alignment with the Google Play Console Data Safety declaration:
+            </p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Category</th>
+                            <th>Collected by Developer?</th>
+                            <th>Shared with Third Parties?</th>
+                            <th>Purpose / Handling</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Personal Info</strong> (Name, Email, Phone, Address, IDs)</td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>Not collected or requested.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Financial Info</strong> (Payment, Card Numbers)</td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>App is 100% free with virtual in-game points only.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Location</strong> (Precise, Approximate)</td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>No location sensors or permissions used.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Photos, Videos, Audio</strong></td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>No media access or recording.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Messages, Contacts, Calendar</strong></td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>No communications access.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>App Activity &amp; Analytics</strong></td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>Progression stored locally in on-device SQLite only.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Device / Other Identifiers</strong> (IMEI, AAID)</td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>No device fingerprinting or ad IDs harvested.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 13. Comprehensive Data Map -->
+        <section class="content-card">
+            <h2>13. Technical Data Inventory (Data Map)</h2>
+            <p>
+                In alignment with ISO/IEC 27701 and privacy engineering standards, here is the full inventory of all data entities processed within the Memory Flow codebase:
+            </p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Entity</th>
+                            <th>Origin / Component</th>
+                            <th>Storage Destination</th>
+                            <th>Retention Horizon</th>
+                            <th>Processing Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Level Scores &amp; Streaks</strong></td>
+                            <td><code>GameController.kt</code>, <code>ScoringSystem.kt</code></td>
+                            <td>Local SQLite (<code>MemoryFlowDatabase</code>)</td>
+                            <td>Until app data cleared or uninstalled</td>
+                            <td>Record cognitive test results and high scores locally</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Flux Points Balance</strong></td>
+                            <td><code>ProgressionSystem.kt</code></td>
+                            <td>Local SQLite (<code>ModeProgressDao</code>)</td>
+                            <td>Until app data cleared or uninstalled</td>
+                            <td>Reward player cognitive progress with virtual unlock points</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Equipped Theme ID</strong></td>
+                            <td><code>SettingsScreen.kt</code>, <code>MenuViewModel.kt</code></td>
+                            <td>Local DataStore / SQLite</td>
+                            <td>Until app data cleared or uninstalled</td>
+                            <td>Apply visual aesthetic selected by player</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Audio &amp; Haptic Toggles</strong></td>
+                            <td><code>SettingsScreen.kt</code>, <code>SoundManager.kt</code></td>
+                            <td>Local DataStore / SharedPreferences</td>
+                            <td>Until app data cleared or uninstalled</td>
+                            <td>Respect user sound and vibration preferences</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Haptic Feedback Pulse</strong></td>
+                            <td><code>TouchSystem.kt</code>, <code>Vibrator</code></td>
+                            <td>Temporary hardware RAM buffer</td>
+                            <td>Milliseconds (runtime only, not stored)</td>
+                            <td>Deliver physical vibration pulse on touch</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 14. Regulatory Compliance Checklist -->
+        <section class="content-card">
+            <h2>14. Regulatory Compliance Verification</h2>
+            <div class="checklist-item">
+                <span class="badge-check">✓</span>
+                <div>
+                    <strong>GDPR (Articles 12, 13 &amp; 14) Compliance:</strong> Transparent, plain-language disclosures regarding data controller identity, lawful basis, data subject rights, and zero cross-border data transfer.
+                </div>
+            </div>
+            <div class="checklist-item">
+                <span class="badge-check">✓</span>
+                <div>
+                    <strong>CCPA / CPRA Compliance:</strong> Complete declaration of non-sale and non-sharing of personal consumer information; non-discrimination commitment.
+                </div>
+            </div>
+            <div class="checklist-item">
+                <span class="badge-check">✓</span>
+                <div>
+                    <strong>COPPA &amp; Google Play Families Policy:</strong> Absolute zero data collection from children; safe cognitive training without third-party advertisements or external social integration.
+                </div>
+            </div>
+            <div class="checklist-item">
+                <span class="badge-check">✓</span>
+                <div>
+                    <strong>Google Play User Data &amp; Permissions Policies:</strong> Strict data minimization; only one low-risk hardware permission (<code>VIBRATE</code>) utilized; accurate Data Safety questionnaire representations.
+                </div>
+            </div>
+            <div class="checklist-item">
+                <span class="badge-check">✓</span>
+                <div>
+                    <strong>Android 15 &amp; Android 16 Readiness:</strong> Fully compliant with modern API level 36 security standards, 16 KB ELF page-size alignment, and private sandboxed scoped data storage.
+                </div>
+            </div>
+        </section>
+
+        <!-- 15. Changes to This Privacy Policy -->
+        <section class="content-card">
+            <h2>15. Changes &amp; Revisions to This Policy</h2>
+            <p>
+                We may periodically update this Privacy Policy to reflect evolving legal mandates, platform operating system enhancements, or potential new app features.
+            </p>
+            <p>
+                When modifications occur, we will update the "Last Updated" date at the top and bottom of this document. We encourage users to periodically review this page. Any updates will remain fully aligned with our foundational pledge: <strong>Memory Flow will never compromise your privacy, sell your data, or convert to invasive tracking.</strong>
+            </p>
+        </section>
+
+        <!-- 16. Contact Information -->
+        <section class="content-card">
+            <h2>16. Contact Information &amp; Redress</h2>
+            <p>
+                If you have questions, comments, feedback, or concerns regarding this Privacy Policy, or if you wish to exercise any statutory rights under applicable privacy laws, please contact the developer directly:
+            </p>
+            <div class="contact-box">
+                <p><strong>Developer:</strong> Athira C P</p>
+                <p><strong>App:</strong> Memory Flow: Brain Training</p>
+                <p><strong>Package ID:</strong> <code>com.memoryflow.brain</code></p>
+                <p><strong>Email:</strong> <a href="mailto:athiracp.official@gmail.com">athiracp.official@gmail.com</a></p>
+                <p><strong>Address:</strong> North Paravoor, Ernakulam, Kerala, India</p>
+                <p><strong>Postal Address:</strong> P.O. Box 57, Charamangalam, Muhamma, Alappuzha – 688525, Kerala, India</p>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                We are committed to resolving any inquiries or requests expeditiously, typically within 30 calendar days of receipt.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logo">MEMORY <span>FLOW</span></div>
+            <p>Cognitive Training • Privacy-First Architecture • Zero Tracking</p>
+            <p class="copyright">
+                © 2026 Athira C P. All rights reserved.
+            </p>
+            <p style="font-size: 0.8rem; color: #64748B; margin-top: 0.75rem;">
+                This privacy policy is hosted at <a href="https://athira603.github.io/memoryflow/">https://athira603.github.io/memoryflow/</a>.
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
