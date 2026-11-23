@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Memory Flow</title>
+    <meta name="description" content="Terms of Service for Memory Flow: Brain Training (com.memoryflow.brain) by Athira C P.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #0c0f17;
+            --bg-card: #151926;
+            --bg-card-sub: #1b2133;
+            --primary: #00BFFF;
+            --primary-glow: rgba(0, 191, 255, 0.25);
+            --secondary: #00FF7F;
+            --secondary-glow: rgba(0, 255, 127, 0.25);
+            --accent-gold: #FFD700;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(0, 191, 255, 0.3);
+            --text-main: #E2E8F0;
+            --text-muted: #94A3B8;
+            --text-heading: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 1.5rem 2.5rem;
+            background: linear-gradient(180deg, #181e30 0%, var(--bg-card) 100%);
+            border: 1px solid var(--border-highlight);
+            border-radius: 20px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px var(--primary-glow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 30px;
+            background: rgba(0, 191, 255, 0.12);
+            border: 1px solid rgba(0, 191, 255, 0.3);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+        }
+
+        h1 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--text-heading);
+            letter-spacing: -0.5px;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(135deg, #FFFFFF 0%, #BAE6FD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 2.25rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--primary);
+            font-size: 1.45rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            font-family: 'Exo 2', sans-serif;
+            color: var(--text-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.1rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #CBD5E1;
+            font-size: 0.95rem;
+        }
+
+        li strong {
+            color: #FFFFFF;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #7DD3FC;
+            text-decoration: underline;
+        }
+
+        .callout {
+            background: var(--bg-card-sub);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.25rem 0;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #181e30 0%, #111420 100%);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-logo {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-logo span {
+            color: var(--primary);
+        }
+
+        .contact-box {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: inline-block;
+            margin-top: 1.25rem;
+            text-align: left;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .contact-box p {
+            margin-bottom: 0.4rem;
+            color: var(--text-main);
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 1rem 0.5rem; }
+            h1 { font-size: 2rem; }
+            .content-card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header class="header">
+            <div class="app-badge">Official Terms of Service • Trader Disclosures</div>
+            <h1>MEMORY FLOW TERMS OF SERVICE</h1>
+            <div class="meta-info">
+                <div class="meta-item"><strong>Application:</strong> Memory Flow: Brain Training</div>
+                <div class="meta-item"><strong>Package:</strong> <code>com.memoryflow.brain</code></div>
+                <div class="meta-item"><strong>Effective Date:</strong> November 2026</div>
+                <div class="meta-item"><strong>Developer:</strong> Athira C P</div>
+            </div>
+        </header>
+
+        <section class="content-card">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                By downloading, installing, accessing, or playing <strong>Memory Flow: Brain Training</strong> ("the App"), you agree to be bound by these Terms of Service ("Terms"). These Terms constitute a legally binding agreement between you and <strong>Athira C P</strong> ("Developer," "we," "our," or "us"). If you do not agree to these Terms, please do not download, install, or use the App.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>2. Entertainment &amp; Cognitive Fitness Disclaimer</h2>
+            <p>
+                Memory Flow is provided strictly for <strong>recreational entertainment and casual cognitive challenge</strong> purposes.
+            </p>
+            <ul>
+                <li>The App is <strong>NOT</strong> a medical device, therapeutic diagnostic tool, or clinical treatment for cognitive impairment, neurological disorders, memory loss, dementia, ADHD, or any medical condition.</li>
+                <li>No claims are made that playing Memory Flow guarantees improvement in overall intellectual capacity, academic achievement, or professional performance.</li>
+                <li>Always consult a certified medical professional for diagnosis or treatment of any health or psychological concerns.</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>3. Age Eligibility</h2>
+            <p>
+                You must be at least <strong>13 years of age</strong> (or the minimum legal age required in your country to consent to mobile software services) to use the App. If you are under the age of 18, you represent that you have received permission from your parent or legal guardian to play Memory Flow and agree to these Terms.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>4. Virtual In-Game Points ("Flux")</h2>
+            <p>
+                The App features an in-game virtual scoring currency referred to as "Flux".
+            </p>
+            <ul>
+                <li><strong>No Real Monetary Value:</strong> Flux points are strictly imaginary, virtual tokens earned through puzzle performance and level completions. They do not constitute real currency, property, or legal tender.</li>
+                <li><strong>Non-Transferable:</strong> Flux points cannot be exchanged, sold, transferred, or redeemed for real money, goods, or services from the Developer or any third party.</li>
+                <li><strong>Local Storage:</strong> Flux balances reside in your device's local application database and may be lost if you clear your device storage or uninstall the App without a cloud backup.</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>5. In-App Purchases &amp; Advertising</h2>
+            <h3>5.1 In-App Purchases (Google Play Billing)</h3>
+            <p>
+                The App may offer optional one-time purchases (e.g., "Remove Ads", premium themes, lifetime unlock).
+            </p>
+            <ul>
+                <li>All payments are processed securely through <strong>Google Play In-App Billing</strong>. The Developer does not collect, receive, or store credit card or payment credentials.</li>
+                <li>All purchases are subject to Google Play's Terms of Service and standard refund policies.</li>
+                <li>One-time purchases are tied to your Google Account and can be restored across compatible devices.</li>
+            </ul>
+            <h3>5.2 Advertisements</h3>
+            <p>
+                The App may display third-party advertisements (such as Google AdMob). Your interactions with advertisements are governed by the respective advertisers' and ad networks' privacy policies.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>6. Intellectual Property Rights</h2>
+            <p>
+                All rights, title, and interest in and to Memory Flow—including but not limited to the software code, game mechanics, visual bubble assets, neon animations, graphic designs, sound effects, musical arrangements, and trademarks—are the exclusive intellectual property of <strong>Athira C P</strong>.
+            </p>
+            <p>
+                You are granted a limited, personal, non-exclusive, non-transferable, revocable license to use the App solely for personal, non-commercial entertainment on your personal Android device.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>7. Prohibited Conduct</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Decompile, reverse engineer, disassemble, or attempt to derive the source code of the App.</li>
+                <li>Cheat, exploit, automate, hack, or manipulate local SQLite database records or memory values to fraudulently alter scores or Flux balances.</li>
+                <li>Redistribute, sell, lease, sublicense, or commercially exploit the App or its assets without prior written consent.</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>8. Disclaimer of Warranties</h2>
+            <p>
+                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, MEMORY FLOW IS PROVIDED ON AN <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> BASIS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE, UNINTERRUPTED, OR COMPATIBLE WITH ALL HARDWARE DEVICES.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>9. Limitation of Liability</h2>
+            <p>
+                TO THE EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPER (ATHIRA C P) BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE APP, LOSS OF DATA, DEVICE DAMAGE, OR GAME SCORES.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>10. Trader Status &amp; EU/EEA/UK Consumer Disclosures</h2>
+            <p>
+                In compliance with the <strong>EU Digital Services Act (DSA)</strong> and consumer protection regulations:
+            </p>
+            <div class="callout">
+                <strong>Trader Information:</strong><br>
+                Developer / Trader: Athira C P<br>
+                Contact Email: <a href="mailto:athiracp.official@gmail.com">athiracp.official@gmail.com</a><br>
+                Address: North Paravoor, Ernakulam, Kerala, India<br>
+                Postal Address: P.O. Box 57, Charamangalam, Muhamma, Alappuzha – 688525, Kerala, India
+            </div>
+            <p>
+                Consumers residing in the European Economic Area (EEA) and United Kingdom retain statutory legal rights and guarantees provided under applicable consumer protection legislation.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>11. Governing Law &amp; Jurisdiction</h2>
+            <p>
+                These Terms shall be governed by and construed in accordance with the laws of <strong>India</strong>, without regard to its conflict of law principles. Any legal action or dispute arising from these Terms or the App shall be subject to the exclusive jurisdiction of the competent courts in <strong>Kerala, India</strong>.
+            </p>
+        </section>
+
+        <section class="content-card">
+            <h2>12. Contact Information</h2>
+            <p>
+                If you have questions, feedback, or legal inquiries regarding these Terms of Service, please contact:
+            </p>
+            <div class="contact-box">
+                <p><strong>Developer:</strong> Athira C P</p>
+                <p><strong>Email:</strong> <a href="mailto:athiracp.official@gmail.com">athiracp.official@gmail.com</a></p>
+                <p><strong>Address:</strong> North Paravoor, Ernakulam, Kerala, India</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-logo">MEMORY <span>FLOW</span></div>
+            <p>© 2026 Athira C P. All rights reserved.</p>
+            <p style="font-size: 0.85rem; color: #64748B; margin-top: 0.5rem;">
+                Official Terms of Service hosted at <a href="https://athira603.github.io/memoryflow/terms.html">https://athira603.github.io/memoryflow/terms.html</a>.
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
